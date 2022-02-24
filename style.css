@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-transform: capitalize;
+outline: none;
+}
+
+html{
+    font-size: 65%;
+    overflow-x: hidden
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: white;
+} 
+html::-webkit-scrollbar-thumb{
+    background-color: brown;
+}
+
+
+.header{
+    height: 100vh;
+    width: 100%;
+    padding: 0%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: rgb(59, 1, 1);
+    margin-left: 3rem;
+    font-weight: bolder;
+}
+
+.nav-link{
+    padding: 28px 0;
+}
+
+.nav-link li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-link li a{
+    text-decoration: none;
+    color: rgb(59, 1, 1);
+    padding: 5px 0;
+    font-size: 1.5rem;
+    position: relative;
+    margin-right: 3rem;
+    font-weight: bolder;
+}
+
+.nav-link li a::after{
+    content: '';
+    color: white; 
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    transition: width 0.5s;
+
+}
+
+.nav-link li a:hover{
+    width: 100%;
+    color: white;
+}
+
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 900px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(59, 1, 1);
+    padding-top: 50px;
+}
+
+.content h1{
+    font-size: 65px; 
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: rgb(59, 1, 1);
+}
+
+.content form{
+    background-color: rgb(59, 1, 1);
+    padding: 10px;
+    border-radius: 8px;
+    display: flexbox;
+    margin-left: 10px; 
+    margin-right: 0; 
+}
+
+.content form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding:  10px;
+    font-size: 18px;
+}
+.content form button{
+    background-color: rgb(148, 143, 143);
+    color: black;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.content label{
+    color: whitesmoke;
+    font-size: 2rem;
+}
+.content .button{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+}
+
+.inputbox i .fa{
+    position: absolute;
+    margin: 0 auto;
+    color: brown;
+    top: 13px;
+    right: 1rem;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: darkslategray;
+}
+.heading span{
+    position: relative;
+    z-index: 0;
+}
+.heading span::before{
+    content: none;
+    position: absolute;
+    bottom: 1rem; left: 0;
+    z-index: -1;
+    background: darkslategray;
+    height: 100%;
+    width: 100%;
+
+}
+.packages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+
+}
+.packages .box-container .box{
+    background-color: darkslategray;
+    border-radius: .5rem;
+    box-shadow: none;
+
+}
+.packages .box-container .box .image{
+    padding: .1.5rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.packages .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .1rem;
+}
+ .packages .box-container .box .image h3{ 
+    position: absolute;
+    top: 2.5rem; left: 2.5rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: .5rem;
+    font-weight: lighter;
+    padding: .5rem 1.5rem;
+}
+ .packages .box-container .box .image h3 i{  
+     color: brown 
+}
+   .packages .box-container .box .booked{  
+    padding: 1.5rem;
+     padding-top: 0; 
+}
+
+.packages .box-container .box .booked .price{
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.packages .box-container .box .booked .price span{
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    
+      
+}
+.packages .box-container .box .booked p{
+    font-size: 1.3rem;
+    padding: 5rem 0;
+    line-height: 1.7rem;
+    color: whitesmoke;
+  }   
+  .packages .box-container .box .booked .btn{
+      background-color: brown;
+      font-weight: 900;
+
+  }
+
+.services{
+    background-color: rgb(185, 176, 164);
+}
+.heading{
+    padding: 50px 30PX;
+    text-align: center;
+    font-weight: bold;
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+   
+   
+}
+.services .box-container .box{
+    border-radius: .5rem;
+    position: relative;
+    padding: 2rem;
+    box-shadow: none;
+   
+    
+
+}
+.services .box-container .box span{
+    position: absolute;
+    top: .5rem; right: 2rem;
+    font-weight: bolder;
+    font-size: 3rem;
+    
+}
+.services .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: brown;
+    background-color: darkslategray;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+
+}
+.services .box-container .box h3{
+    color: black;
+    font-size: 2.3rem;
+    padding: 5rem 0;
+    
+}
+.services .box-container .box h3:hover{
+    color: blue;
+}
+.services .box-container .box p{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+}
+.services .box-container .box a{
+    text-decoration: none;
+}
+.review .review-slide{
+    box-shadow: none;
+}
+.review .review-slide .slide{
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem;
+}
+.review .review-slide .slide img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+.review .review-slide .slide h3{
+    font-size: 2.5rem;
+   
+}
+.review .review-slide .slide p{
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    padding: 1rem 0;
+
+}
+.review .review-slide .slide .stars{
+    padding: 1rem 0;
+    padding-bottom: 1.5rem;
+}
+.review .review-slide .slide .stars i{
+    font-size: 2rem;
+    color: brown;
+    
+}
+.blog{
+    background-color: rgb(185, 176, 164);
+}
+.blog .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.3rem;
+
+}
+.blog .box-container .box{
+    border-radius: .5rem;
+    box-shadow: none;
+    padding: 2rem;
+
+}
+.blog .box-container .box .image{
+    height: 20rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: .5rem;
+
+}
+.blog .box-container .box .edit{
+    padding-top: 1rem;
+}
+.blog .box-container .box .edit h3{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.blog .box-container .box .edit .icons{
+    display: flex;
+    justify-content: space-between;
+    border-top: .1rem solid black;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+
+}
+.blog .box-container .box .edit .icons a{
+    font-size: 1.5rem;
+}
+.blog .box-container .box .edit .icons a :hover{
+    color: darkslategray;
+}
+.blog .box-container .box .edit .icons a i{
+    color: brown;
+    padding-right: .5rem;
+
+}
+.click{
+    background-color: brown;
+    text-decoration: none;
+    color: black;
+    border-radius: .2rem;
+    padding: .2rem;
+}
+
+
+.footer{
+background-color: rgb(15, 14, 14);
+background-size: cover;
+background-position:center;
+background-attachment: fixed;
+padding: 50px 30PX;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    padding-left: 3rem;
+}
+.footer .box-container .box h3{
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.footer .box-container .box a{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+.footer .box-container .box a i{
+    color: darkslategrey;
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+.footer .box-container .box a:hover i{
+    padding-right: .2rem;
+}
+.footer .credit{
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: .1rem solid white;
+    font-size: 2rem;
+    color: white;
+    
+}
+.footer .credit span{
+    color: darkslategray;
+    font-weight: bold;
+
+}
+
